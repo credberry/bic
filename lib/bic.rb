@@ -1,5 +1,12 @@
-require "bic/version"
+# -*- encoding : utf-8 -*-
 
 module Bic
-  # Your code goes here...
+  # длина БИК
+  BIC_LENGTH = 9
+
+  # длина номера счета
+  ACCOUNT_LENGTH = 20
 end
+
+
+Dir[File.expand_path("../bic/**rb", __FILE__)].each { |f| require f }
