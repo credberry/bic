@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Bic::VERSION
   gem.authors       = ["Pavel Lazureykis"]
   gem.email         = ["lazureykis@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Валидация банковских реквизитов}
+  gem.summary       = %q{Библиотека для валидации банковских реквизитов}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
