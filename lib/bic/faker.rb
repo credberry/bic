@@ -46,7 +46,7 @@ module Bic
         acc = (0...Bic::ACCOUNT_LENGTH).map{ rand(10) }.join
         (0..9).each do |i|
           acc[8] = i.to_s # 9-ое число - контрольная цифра
-          return acc if validate_account(bic, acc)
+          return acc if valid_account?(bic, acc)
         end
         nil
       end
