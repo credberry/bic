@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+require 'fileutils'
+
+abort('bundle install failed') unless system('bundle install')
+abort('rspec tests failed.') unless system('bundle exec rspec')
