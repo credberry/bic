@@ -5,10 +5,9 @@ describe Bic::Faker do
 
   it 'generates valid bic and account' do
     bic = Bic::Faker.bic
-    valid_bic?(bic).should == true
+    expect(valid_bic?(bic)).to eq(true)
 
     account = Bic::Faker.account(bic)
-    valid_account?(bic, account).should == true
+    expect(valid_account?(bic, account)).to eq(true)
   end
-
 end

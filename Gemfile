@@ -5,6 +5,7 @@ gemspec
 
 group :test do
   gem 'rspec'
-  gem 'rr'
   gem 'autotest'
+  gem 'simplecov'
+  gem 'codeclimate-test-reporter'
 end
